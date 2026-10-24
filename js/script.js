@@ -218,3 +218,27 @@ function blowCandles(){
     });
 
 }
+
+for(let i=0;i<40;i++){
+
+    const star =
+    document.createElement("div");
+
+    star.classList.add("star");
+
+    star.innerHTML = "✨";
+
+    star.style.left =
+    Math.random()*100+"%";
+
+    star.style.top =
+    Math.random()*100+"%";
+
+    star.style.fontSize =
+    Math.random()*10+10+"px";
+
+    document
+    .querySelector(".stars-container")
+    .appendChild(star);
+
+}
