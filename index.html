@@ -11,6 +11,18 @@
 
 <body>
 
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <h1>✨ Preparing Something Special ✨</h1>
+
+            <p>Loading Birthday Magic...</p>
+
+        </div>
+
+    </div>
+
     <audio id="bgMusic" loop>
         <source src="audio/music.mp3" type="audio/mpeg">
     </audio>
@@ -136,6 +148,22 @@
 
     </section>
 
+    <section class="cake-section">
+
+        <h2>🎂 Make A Birthday Wish</h2>
+
+        <p>
+            Tap the button and make a wish.
+        </p>
+
+        <button onclick="blowCandles()" class="celebrate-btn">
+            🎂 Blow The Candles
+        </button>
+
+        <h3 id="wishMessage"></h3>
+
+    </section>
+
     <section class="finale">
 
         <h2>🎉 Happy Birthday KAVANA 🎉</h2>
@@ -152,6 +180,16 @@
         <div id="celebrationMessage"></div>
 
     </section>
+
+    <div id="lightbox" class="lightbox">
+
+        <span id="closeLightbox">✖</span>
+
+        <img id="lightboxImage">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 
     <script src="js/script.js"></script>
 
