@@ -4,28 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
+    <title>Happy Birthday KAVANA ❤️</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- HERO SECTION -->
+    <audio id="bgMusic" loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn" class="music-btn">
+        🎵 Play Music
+    </button>
 
     <section class="hero">
 
-        <div class="content">
+        <div class="hero-content">
 
             <h1>Happy Birthday 🎂</h1>
 
-            <h2>KAVANA</h2>
+            <h2>KAVANA ✨</h2>
 
-            <p>
-                A little digital surprise made especially for you ✨
+            <p id="typingText">
+                A little digital surprise made especially for you.
             </p>
 
-            <button onclick="scrollToGallery()">
+            <button onclick="scrollToGallery()" class="main-btn">
                 Begin The Journey
             </button>
 
@@ -33,61 +39,117 @@
 
     </section>
 
-    <!-- GALLERY SECTION -->
-
     <section id="gallery" class="gallery">
 
-        <h2>Beautiful Moments ✨</h2>
+        <h2>Beautiful Moments 📸</h2>
 
-        <div class="photos">
+        <div class="photo-grid">
 
-            <div class="card">
-                <h3>✨ Beautiful Soul</h3>
-                <p>A beautiful soul shines brightest.</p>
+            <img src="images/photo1.jpeg">
+            <img src="images/photo2.jpeg">
+            <img src="images/photo3.jpeg">
+            <img src="images/photo4.jpeg">
+            <img src="images/photo5.jpeg">
+            <img src="images/photo6.jpeg">
+            <img src="images/photo7.jpeg">
+            <img src="images/photo8.jpeg">
+            <img src="images/photo9.jpeg">
+            <img src="images/photo10.jpeg">
+            <img src="images/photo11.jpeg">
+            <img src="images/photo12.jpeg">
+            <img src="images/photo13.jpeg">
+            <img src="images/photo14.jpeg">
+            <img src="images/photo15.jpeg">
+            <img src="images/photo16.jpeg">
+            <img src="images/photo17.jpeg">
+            <img src="images/photo18.jpeg">
+
+        </div>
+
+    </section>
+
+    <section class="qualities">
+
+        <h2>Why KAVANA Is Amazing ✨</h2>
+
+        <div class="qualities-grid">
+
+            <div class="quality-card">
+                🌸
+                <h3>Kind Heart</h3>
+                <p>Kindness is a beauty that never fades.</p>
             </div>
 
-            <div class="card">
-                <h3>🌸 Wonderful Person</h3>
-                <p>Some people make the world brighter simply by being in it.</p>
+            <div class="quality-card">
+                ✨
+                <h3>Inspiring</h3>
+                <p>Your positivity makes the world brighter.</p>
             </div>
 
-            <div class="card">
-                <h3>💖 Keep Smiling</h3>
-                <p>Your smile has the power to make someone's day better.</p>
+            <div class="quality-card">
+                💖
+                <h3>Special</h3>
+                <p>Some people leave a lasting impression simply by being themselves.</p>
+            </div>
+
+            <div class="quality-card">
+                🌷
+                <h3>Wonderful</h3>
+                <p>The world became happier the day you were born.</p>
             </div>
 
         </div>
 
     </section>
 
-    <!-- BIRTHDAY MESSAGE -->
+    <section class="envelope-section">
+
+        <h2>💌 One More Thing...</h2>
+
+        <div class="envelope" onclick="openLetter()">
+
+            📩
+
+        </div>
+
+        <p id="secretMessage"></p>
+
+    </section>
 
     <section class="letter">
 
-        <h2>💌 Special Birthday Message</h2>
+        <h2>💌 A Birthday Wish</h2>
 
         <p>
-            Happy Birthday! 🎉
+            Happy Birthday, KAVANA ❤️
             <br><br>
-
-            May this year bring happiness, success,
-            beautiful memories and endless smiles.
-
+            May your life be filled with happiness,
+            success, laughter and beautiful memories.
             <br><br>
-
-            May every dream you have move one step closer
-            to becoming reality.
-
+            May every dream you carry in your heart
+            find its way into reality.
             <br><br>
-
-            Keep shining and being the wonderful person
-            you are. ✨
-
-            <br><br>
-
-            Wishing you a day filled with joy,
-            laughter, and everything that makes you happy. ❤️
+            Keep smiling, keep shining and continue
+            being the wonderful person you are.
+            ✨
         </p>
+
+    </section>
+
+    <section class="finale">
+
+        <h2>🎉 Happy Birthday KAVANA 🎉</h2>
+
+        <p>
+            May your future be filled with happiness,
+            success, beautiful memories and endless smiles.
+        </p>
+
+        <button onclick="launchCelebration()" class="celebrate-btn">
+            🎆 Celebrate
+        </button>
+
+        <div id="celebrationMessage"></div>
 
     </section>
 
