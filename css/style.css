@@ -435,3 +435,25 @@ margin:auto;
 line-height:2;
 font-size:1.2rem;
 }
+
+.hero-photo{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:25px;
+border:6px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.footer{
+padding:30px;
+text-align:center;
+opacity:.7;
+}
+
+.ending{
+padding:120px 20px;
+text-align:center;
+}
+
